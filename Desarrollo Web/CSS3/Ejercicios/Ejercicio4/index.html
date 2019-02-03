@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <h1>Registro en nuestra tienda</h1>
+    <form>
+      <p>
+        <label for="NombreUsuario">Nombre de usuario:</label><br/>
+          <input type="text" name="NombreUsuario" placeholder="Ej. Luis" autofocus required>
+      </p>
+      <p>
+        <label for="EmailUsuario">Email:</label><br/>
+          <input type="email" name="EmailUsuario" placeholder="Ej. luis@gmail.com" size="50px" required>
+      </p>
+      <p>
+        <label for="EdadUsuario">Edad:</label><br/>
+          <input type="number" name="EdadUsuario" placeholder="Ej. 21" required>
+      </p>
+      <p>
+        <label for="FechaNacimiento">Fecha de Nacimiento:</label><br/>
+          <input type="date" name="FechaNacimiento" required>
+      </p>
+      <p>
+        <label for="Genero">G&eacute;nero:</label><br/>
+          <input type="radio" name="Genero">Masculino<br/>
+          <input type="radio" name="Genero">Femenino
+      </p>
+      <p>
+        <label for="RecomendadoPor">Recomendado por:</label><br/>
+          <select name="RecomendadoPor">
+            <option>Google</option>
+            <option>Amigo</option>
+            <option>Redes Sociales</option>
+          </select>
+      </p>
+      <p>
+        <label for="Comentarios">Comentarios:</label><br/>
+          <textarea name="Comentarios"></textarea>
+      </p>
+      <p>
+        <label for="AceptoTermCond">Acepto Terminos y Condiciones:</label><br/>
+          <input type="checkbox" name="AceptoTermCond" required>
+      </p>
+      <p>
+        <input type="submit" name="Registrar" value="Registrar">
+      </p>
+    </form>
+  </body>
+</html>

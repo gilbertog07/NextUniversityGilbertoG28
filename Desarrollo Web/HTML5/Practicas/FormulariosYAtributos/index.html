@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Tipos de Inputs</title>
+  </head>
+  <body>
+    <form autocomplete="on" name="Mi primer formulario">
+      <fieldset>
+        <legend>Ejemplos de Inputs</legend>
+        <p>Selección de Color<br/>
+          <input type="color">
+        </p>
+        <p>Fecha <br/>
+          <input type="date">
+        </p>
+        <p>Fecha-Hora <br/>
+          <input type="datetime">
+        </p>
+        <p>Fecha-Hora local <br/>
+          <input type="datetime-local">
+        </p>
+        <p>Archivos planos, archivos de word, etc <br/>
+          <input type="file">
+        </p>
+        <p>Email <br/>
+          <input type="email">
+        </p>
+        <p>Mes <br/>
+          <input type="month">
+        </p>
+        <p>Números <br/>
+          <input type="number">
+        </p>
+        <p>Rango de Números <br/>
+          <input type="range" min="0" max="10">
+        </p>
+        <p>Búsqueda <br/>
+          <input type="search">
+        </p>
+        <p>Teléfono <br/>
+          <input type="tel">
+        </p>
+        <p>Hora <br/>
+          <input type="time">
+        </p>
+        <p>Dirección URL <br/>
+          <input type="url">
+        </p>
+        <p>Semana <br/>
+          <input type="week">
+        </p>
+        <p>Reset <br/>
+          <input type="reset">
+        </p>
+        <p>Botón HTML <br/>
+          <input type="button" value="Botón HTML">
+        </p>
+        <p>Envío de Formulario <br/>
+          <input type="submit">
+        </p>
+        <p>Lista en cascada <br/>
+          <select>
+            <option>Ciudad 1</option>
+            <option>Ciudad 2</option>
+            <option>Ciudad 3</option>
+          </select>
+        </p>
+        <p>Area de texto <br/>
+          <textarea name="area_texto" rows="8" cols="80"></textarea>
+        </p>
+        <label for="nombre">Texto del Label</label>
+        <input type="text" name="name" id="nombre">
+      </fieldset>
+      <fieldset>
+        <legend>Atributos de campos inputs</legend>
+        <p>Campo de texto deshabilitado <br/>
+          <input type="text" disabled value="texto">
+        </p>
+        <p>Campo de texto de solo lectura <br/>
+          <input type="text" readonly value="texto">
+        </p>
+        <p>Texto máximo de 5 caracteres <br/>
+          <input type="text" maxlength="5">
+        </p>
+        <p>Campo para ingresar un número con valor máximo de 100 <br/>
+          <input type="number" max="100">
+        </p>
+        <p>Campo para ingresar un número con valor mínimo de 10 <br/>
+          <input type="number" min="10">
+        </p>
+        <p>Campo de texto con valor predeterminado de Texto <br/>
+          <input type="text" value="Texto ejemplo">
+        </p>
+        <p>Campo númerico con paso de 5 <br/>
+          <input type="number" step="5">
+        </p>
+        <p>Atributo con pista para el usuario <br/>
+          <input type="text" placeholder="Ingrese el nombre">
+        </p>
+        <p>Atributo para nombrar la etiqueta <br/>
+          <input type="text" name="campo_apellido">
+        </p>
+        <p>Atributo para asignar un identificador único <br/>
+          <input type="email" id="email_usuario">
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

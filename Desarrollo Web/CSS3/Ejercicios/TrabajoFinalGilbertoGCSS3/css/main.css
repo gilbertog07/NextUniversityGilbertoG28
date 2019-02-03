@@ -1,0 +1,104 @@
+*
+{
+	margin:0;
+}
+
+#encabezado {
+  background-color: #5b7989;
+  border-radius: 10px;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
+
+#titulo {
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  font-family: sans-serif;
+}
+
+#url_list1 {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#url1, #url2, #url3 {
+  float: right;
+  display: block;
+  margin: 0px 5px;
+  text-decoration: underline;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+#columna1
+{
+background-color: #91C9E8;
+width: 50%;
+
+}
+#columna2
+{
+background-color: #D1D1D1;
+width: 5%;
+}
+#columna3
+{
+background-color: #3399CC;
+width: 5%;
+}
+
+@media screen and (max-width: 960px){
+
+	#wrapper
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1
+	{
+	width: 100%;
+	}
+	#columna2
+	{
+	width: 100%;
+	}
+	#columna3
+	{
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	}
+}

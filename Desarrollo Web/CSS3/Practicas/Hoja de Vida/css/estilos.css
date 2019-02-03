@@ -1,0 +1,129 @@
+/* Selectores de Etiqueta */
+body
+{
+  background-color: gray;
+}
+footer
+{
+  margin-top: 20px;
+}
+img
+{
+  border-radius: 10px;
+}
+/**************************/
+/* Selectores de ID */
+#Indice
+{
+
+}
+#Contenedor
+{
+  font-family: helvetica;
+  font-size: 16px;
+}
+#Encabezado
+{
+  display: block;
+  margin: 0 auto;
+}
+/********************/
+/* Selectores de Clases*/
+.itemIndice
+{
+  list-style-type: upper-roman;
+}
+.enlace
+{
+  color: red;
+}
+/***********************/
+/*Selectores de Atributos*/
+/*a[href],
+a[href="http:\\www.google.com"],*/
+/*img[src$=svg], busca la palabra especificada al final del valor del atributo*/
+/*img[src^=svg], busca la palabra especificada al principio del valor del atributo*/
+/*img[src~=svg], Se usa cuando el atributo tiene multiples valores separados por espacio*/
+/*img[src|-=svg], buscara el valor al principio o en todo el contenido del atributo*/
+/*[title*] Sirve para seleccionar todos los elementos con un valor / atributo especificado independiente de la etiqueta*/
+/*Ejemplo: seleccionara todas las etiquetas title con el valor descripcion*/[title*="descripcion"]
+a[href|='html']
+{
+  color: red;
+}
+img[src$='svg']
+{
+  border-radius: 50px;
+}
+img[src$='jpg'],img[src$='png']
+{
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/*************************/
+/*Selectores Avanzados*/
+* /*se aplica a todos los elementos de un documento html*/
+{
+  margin: 1vh 1vw;
+}
+h2 + h3 /*selecciona un elemento h2 si y solo si este esta precedido por un h1*/
+{
+  text-decoration: underline;
+}
+h2 ~ p /*selecciona todos los p que esten precedidos por h2*/
+{
+  text-align: justify;
+}
+article> h2 /*selecciona todos los h2 contenidos en article*/
+{
+  text-decoration: underline;
+}
+ul li
+{
+  list-style-type: circle;
+}
+/**********************/
+a[href^='http://']:visited
+{
+  color: red;
+}
+a:hover
+{
+  color: green;
+}
+h2:first-child
+{
+  text-decoration: underline;
+}
+input:focus
+{
+  width: 160px;
+  height: 140px;
+}
+p::first-letter
+{
+  text-transform: capitalize;
+}
+p::first-line
+{
+  font-size: 32;
+}
+p::selection
+{
+
+}
+::before::after
+:first-child
+:last-child
+#Estudios>ul>li:first-child>a::after
+{
+  content: '" -after"'
+}
+#Estudios>ul>li:last-child>a::before
+{
+  content: '"before -"'
+}
+#Estudios>ul>li:nth-child(2)>a::after
+{
+  content: '" -after"'
+}

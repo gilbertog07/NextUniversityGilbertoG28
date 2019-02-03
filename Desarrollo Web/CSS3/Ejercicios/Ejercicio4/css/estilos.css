@@ -1,0 +1,21 @@
+p> textarea
+{
+  width: 200px;
+}
+body
+{
+  margin: 20px;
+  font-family: verdana;
+}
+input[type="email"]
+{
+  background-color: #eeeeee;
+}
+p, label
+{
+  font-family: tahoma;
+}
+p:nth-child(3) /*selecciona el elemento p que es el 3er hijo de su pariente*/
+{
+	color: red;
+}
